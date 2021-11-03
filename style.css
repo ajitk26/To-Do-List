@@ -1,10 +1,64 @@
+body{
+	font-family: Ubuntu;
+	background: #5614B0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #DBD65C, #5614B0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #DBD65C, #5614B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1{
+	background:blueviolet;
+	color: white;
+	margin: 0;
+	padding: 7px 13px;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+ul{
+	list-style: none;
+	padding: 1px;
+	margin: 1px;
+}
+
+li{
+	background: white;
+	height: 35px;
+	line-height: 35px;
+}
+
 #container{
-	width: 400px;
-	margin: 0 auto;
-	border: 2px solid;
+	width: 380px;
+	margin: 100px auto;
+	background:#f7f7f7;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .finished{
 	color:red;
 	text-decoration: line-through;
+}
+
+input{
+	width: 100%;
+	font-size: 17px;
+	padding: 7px 7px 7px 9px;
+	box-sizing: border-box;
+	color: black;
+	border: 2px solid;
+	font-weight: solid;
+}
+span{
+	height: 35px;
+	margin-right: 18px;
+	text-align: center;
+	width:0;
+	display: inline-block;
+	background:mediumvioletred;
+	color: white;
+	transition: 0.3s linear;
+
+}
+
+li:hover span{
+	width: 35px;
 }
